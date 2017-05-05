@@ -32,7 +32,7 @@ UfrgsAPI.initialize(false *isProduction*, *YOUT CLIENT ID*, *YOUR CLIENT SECRET*
 ```
 
 
-If you do not have this information please contact CPD
+This information is currently restricted to UFRGS's CPD.
 
 ## 3. Login/Request token
 
