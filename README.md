@@ -48,7 +48,7 @@ ufrgsTokenManager.requestNewToken(context, username, password, new UfrgsTokenMan
 
             }
         });
-´´´
+```
 
 After getting the token from the user you can already initiate calls to the requested scopes.
 
