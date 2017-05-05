@@ -4,7 +4,7 @@ This SDK provides a simple way to communicate with the UFRGS API and its various
 Below a list of all available scopes:
 
 ### SCOPES
-- **Meus Dados** this scope provides information about the user as well as his / her photo.
+- **Meus Dados** this scope provides information about the user as well as their photo.
 - **Biblioteca** this scope provides information related to loans made at the UFRGS library as well as enpoints necessary for their renewal.
 - **Caronas** this scope provides all the endpoints needed for the Ufrgs Carona app [still in development]
 
@@ -28,7 +28,12 @@ Not yet available
 Be sure to initialize your SDK before making any calls.
 
 ```java
-UfrgsAPI.initialize(false *isProduction*, *YOUT CLIENT ID*, *YOUR CLIENT SECRET*, *SCOPE REQUESTED*, *GRANT TYPE*);
+UfrgsAPI.initialize(
+  false  /* setApiToProduction */, 
+  "CLIENT_AB" /* clientId */, 
+  "SECRET_AB" /* clientSecret */, 
+  "SCOPE_AB" /* scope */, 
+  "GRANT_AB" /* grantType */);
 ```
 
 
@@ -37,17 +42,23 @@ This information is currently restricted to UFRGS's CPD.
 ## 3. Login/Request token
 
 ```java
-ufrgsTokenManager.requestNewToken(context, username, password, new UfrgsTokenManager.OnTokenListener() {
-            @Override
-            public void onTokenReady(UfrgsToken token) {
-                
-            }
+requestNewToken(context /* context */, 
+  "12345" /* username */,
+  "password" /* password */, 
+  new UfrgsTokenManager.OnTokenListener() {
+    @Override
+    public void onTokenReady(UfrgsToken token) {
+      
+      /* Token ready */
+    
+    }
 
-            @Override
-            public void onError(String error) {
-
-            }
-        });
+    @Override
+    public void onError(String error) {
+    
+      /* Handle errors */
+    
+    } /* callback */);
 ```
 
 After getting the token from the user you can already initiate calls to the requested scopes.
