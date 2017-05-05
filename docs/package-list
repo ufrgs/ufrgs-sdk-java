@@ -1,0 +1,13 @@
+br.ufrgs.ufrgsapi
+br.ufrgs.ufrgsapi.caronas
+br.ufrgs.ufrgsapi.caronas.models
+br.ufrgs.ufrgsapi.dagger
+br.ufrgs.ufrgsapi.dagger.components
+br.ufrgs.ufrgsapi.dagger.modules
+br.ufrgs.ufrgsapi.library
+br.ufrgs.ufrgsapi.library.models
+br.ufrgs.ufrgsapi.network
+br.ufrgs.ufrgsapi.network.pojo
+br.ufrgs.ufrgsapi.token
+br.ufrgs.ufrgsapi.user_data
+br.ufrgs.ufrgsapi.utils
