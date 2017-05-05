@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ufrgs.backgroundWhite"
+    android:gravity="center_horizontal"
+    style="@style/UfrgsTheme"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        >
+
+    <ImageView
+        android:id="@+id/login_dialog.icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ufrgs_logo"
+        />
+
+
+    <EditText
+        android:id="@+id/login_dialog.user_edit_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Cartão UFRGS"
+        android:textColor="@color/ufrgs.primaryText"
+        android:inputType="number"
+        />
+
+
+    <EditText
+        android:id="@+id/login_dialog.password_edit_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:textColor="@color/ufrgs.primaryText"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/login_dialog.login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/ufrgs.colorAccent"
+        android:textColor="@color/ufrgs.white"
+        android:text="Login"
+        />
+
+    <TextView
+        android:id="@+id/login_dialog.error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textColor="@color/ufrgs.red"
+        android:visibility="gone"
+        tools:text="Nao foi possivel se conectar com a UFRGS"
+        tools:visibility="visible"
+        />
+
+    <TextView
+        android:id="@+id/login_dialog.forgot_password_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/ufrgs.secondaryText"
+        android:text="Esqueceu sua senha?"
+        />
+
+    </LinearLayout>
+
+</ScrollView>

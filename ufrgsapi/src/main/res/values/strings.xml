@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UFRGS Api</string>
+
+    <string name="request_ufrgs_login">Faça seu login na UFRGS</string>
+    <string name="user">Cartão UFRGS</string>
+    <string name="password">Senha</string>
+    <string name="login">Login</string>
+    <string name="forgot_password_question">Esqueceu sua senha?</string>
+    <string name="loading">Carregando</string>
+    <string name="wrong_user_or_password">Usuário ou senha incorreto</string>
+</resources>
