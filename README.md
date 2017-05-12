@@ -21,7 +21,13 @@ SDK provides a manager for each of the scopes plus an additional manager for tok
 ## 1. Provide the gradle dependency
 
 ```gradle
-Not yet available
+repositories {
+        maven { url  "http://dl.bintray.com/ufrgs/maven" }
+    }
+```
+
+```gradle
+compile 'br.ufrgs:ufrgsapi:1.0.0@aar'
 ```
 
 ## 2. Initialize the SDK
