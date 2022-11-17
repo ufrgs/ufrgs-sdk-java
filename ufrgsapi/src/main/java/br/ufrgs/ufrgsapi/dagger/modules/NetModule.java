@@ -42,7 +42,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 @Module
-@SDKScope
 public class NetModule {
 
     private String mBaseUrl;

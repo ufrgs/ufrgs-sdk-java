@@ -32,7 +32,6 @@ import dagger.Provides;
  */
 
 @Module
-@SDKScope
 public class TokenModule {
 
     private Context context;

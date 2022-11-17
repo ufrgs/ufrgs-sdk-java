@@ -29,7 +29,6 @@ import dagger.Provides;
  */
 
 @Module
-@SDKScope
 public class SettingsModule {
 
     public static final String CLIENT_ID = "clientId";

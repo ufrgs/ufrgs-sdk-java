@@ -64,7 +64,6 @@ public class UfrgsUserDataManager  {
                 .tokenModule(new TokenModule(context))
                 .build().inject(this);
 
-
         this.context = context;
         mTokenHeader = "Bearer " + mToken.accessToken;
     }
