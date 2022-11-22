@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import br.ufrgs.ufrgsapi.R;
+import br.ufrgs.ufrgsapi.test_app.R;
 import br.ufrgs.ufrgsapi.token.UfrgsTokenManager;
 import br.ufrgs.ufrgsapi.token.UfrgsToken;
 
