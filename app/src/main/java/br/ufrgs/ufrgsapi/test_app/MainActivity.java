@@ -1,37 +1,21 @@
 package br.ufrgs.ufrgsapi.test_app;
 
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.text.InputType;
-import android.util.Log;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import br.ufrgs.ufrgsapi.caronas.UfrgsCaronasManager;
-import br.ufrgs.ufrgsapi.caronas.models.CaronasCarsAnswer;
-import br.ufrgs.ufrgsapi.caronas.models.CaronasCarsData;
-import br.ufrgs.ufrgsapi.caronas.models.CaronasOferecimentoAwnswer;
-import br.ufrgs.ufrgsapi.caronas.models.CaronasSolicitationAnswer;
-import br.ufrgs.ufrgsapi.caronas.models.CaronasSolicitationData;
-import br.ufrgs.ufrgsapi.network.pojo.ErrorData;
 import br.ufrgs.ufrgsapi.token.UfrgsTokenManager;
 import br.ufrgs.ufrgsapi.user_data.UfrgsUser;
 import br.ufrgs.ufrgsapi.user_data.UfrgsUserDataManager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 /**
  * Created by theolm on 04/07/16.

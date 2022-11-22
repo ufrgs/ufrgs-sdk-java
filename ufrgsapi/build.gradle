@@ -24,19 +24,19 @@ android {
 }
 
 dependencies {
-    testImplementation 'junit:junit:4.12'
+    // API calls
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+    api 'com.google.code.gson:gson:2.8.9'
 
-    api 'com.android.support:design:25.1.1'
-
-    api 'com.squareup.retrofit2:retrofit:2.2.0'
-    api 'com.squareup.retrofit2:converter-gson:2.2.0'
-
-    api 'com.google.code.gson:gson:2.7'
-
+    // Dependency injection
     implementation 'com.google.dagger:dagger:2.43.2'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.43.2'
 
     compileOnly 'javax.annotation:jsr250-api:1.0'
+
+    // Unit test
+    testImplementation 'junit:junit:4.13.2'
 }
 
 task makeJar(type: Copy) {

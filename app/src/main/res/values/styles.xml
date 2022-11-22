@@ -8,4 +8,40 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="UfrgsTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/ufrgs.colorPrimary</item>
+        <item name="colorPrimaryDark">@color/ufrgs.colorPrimaryDark</item>
+        <item name="colorAccent">@color/ufrgs.colorAccent</item>
+        <item name="android:textColorPrimary">@color/ufrgs.primaryText</item>
+        <item name="android:textColorSecondary">@color/ufrgs.secondaryText</item>
+        <item name="android:textColorHint">@color/ufrgs.primaryText</item>
+
+        <item name="android:actionBarStyle">@style/UfrgsTheme.ActionBar</item>
+
+        <item name="android:alertDialogTheme">@style/UfrgsTheme.Dialog</item>
+    </style>
+
+    <style name="UfrgsTheme.NoActionBar" parent="UfrgsTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="UfrgsTheme.EditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/ufrgs.colorPrimary</item>
+        <item name="colorControlActivated">@color/ufrgs.colorAccent</item>
+        <item name="colorControlHighlight">@color/ufrgs.colorAccent</item>
+    </style>
+
+    <style name="UfrgsTheme.ActionBar" parent="@android:style/Widget.ActionBar">
+        <item name="android:titleTextStyle">@style/UfrgsTheme.ActionBar.TextStyle</item>
+    </style>
+
+    <style name="UfrgsTheme.ActionBar.TextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/ufrgs.white</item>
+    </style>
+
+    <style name="UfrgsTheme.Dialog">
+        <item name="android:editTextStyle">@style/UfrgsTheme.EditText</item>
+    </style>
+
 </resources>
