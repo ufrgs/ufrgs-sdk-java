@@ -22,12 +22,12 @@ SDK provides a manager for each of the scopes plus an additional manager for tok
 
 ```gradle
 repositories {
-        maven { url  "http://dl.bintray.com/ufrgs/maven" }
-    }
+    maven { url "https://jitpack.io" }
+}
 ```
 
 ```gradle
-compile 'br.ufrgs:ufrgsapi:1.0.0@aar'
+implementation 'com.github.ufrgs:ufrgs-sdk-java:1.0'
 ```
 
 ## 2. Initialize the SDK
