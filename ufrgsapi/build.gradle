@@ -1,43 +1,42 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 32
+
+    namespace 'br.ufrgs.ufrgsapi'
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 32
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
+    // API calls
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+    api 'com.google.code.gson:gson:2.8.9'
 
-    compile 'com.android.support:support-v4:25.1.1'
-    compile 'com.android.support:appcompat-v7:25.1.1'
+    // Dependency injection
+    implementation 'com.google.dagger:dagger:2.43.2'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.43.2'
 
-    compile 'com.android.support:design:25.1.1'
-    compile 'com.android.support:recyclerview-v7:25.1.1'
-    compile 'com.android.support:cardview-v7:25.1.1'
+    compileOnly 'javax.annotation:jsr250-api:1.0'
 
-    compile 'com.squareup.retrofit2:retrofit:2.2.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
-
-    compile 'com.google.code.gson:gson:2.7'
-
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.9'
-    compile 'com.google.dagger:dagger:2.9'
-    provided 'javax.annotation:jsr250-api:1.0'
-
+    // Unit test
+    testImplementation 'junit:junit:4.13.2'
 }
 
 task makeJar(type: Copy) {

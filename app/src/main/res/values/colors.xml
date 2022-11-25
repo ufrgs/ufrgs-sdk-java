@@ -3,4 +3,19 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="ufrgs.colorPrimary">#0085CC</color>
+    <color name="ufrgs.colorPrimaryDark">#006aa3</color>
+    <color name="ufrgs.colorPrimaryLight">#3399d3</color>
+    <color name="ufrgs.colorAccent">#0085CC</color>
+    <color name="ufrgs.primaryText">#212121</color>
+    <color name="ufrgs.secondaryText">#727272</color>
+    <color name="ufrgs.divider">#b6b6b6</color>
+    <color name="ufrgs.white">#ffffff</color>
+
+    <color name="ufrgs.red">#FF0000</color>
+
+    <color name="ufrgs.backgroundWhite">#fafafa</color>
+    <color name="ufrgs.backgroundTransparent">#00000000</color>
+    <color name="ufrgs.blackTransparent">#44000000</color>
 </resources>
